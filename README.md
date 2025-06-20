@@ -227,8 +227,7 @@ This is an experimental project. Contributions welcome for:
 
 ## 📄 License
 
-MIT License - feel free to modify and distribute.
-
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 ---
 
 **Built with ❤️ using Tauri, Rust, **[Open Interpreter](https://github.com/OpenInterpreter/open-interpreter)**, and modern web technologies.**
