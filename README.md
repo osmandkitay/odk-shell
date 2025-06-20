@@ -231,6 +231,6 @@ MIT License - feel free to modify and distribute.
 
 ---
 
-**Built with ❤️ using Tauri, Rust, Open Interpreter, and modern web technologies.**
+**Built with ❤️ using Tauri, Rust, **[Open Interpreter](https://github.com/OpenInterpreter/open-interpreter)**, and modern web technologies.**
 
 *Note: This project prioritizes local AI models for privacy and offline functionality. While it supports cloud-based AI providers, the focus is on running small, efficient models locally on your machine.*
