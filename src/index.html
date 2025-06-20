@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ODK Shell</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-top">
+          <div class="ai-selector">
+            <label for="ai-select">Choose AI:</label>
+            <select id="ai-select">
+              <option value="">-- Select AI Provider --</option>
+              <optgroup label="🦙 Ollama (Local)" id="ollama-group">
+                <option value="loading-ollama">Loading models...</option>
+              </optgroup>
+              <optgroup label="🤖 OpenAI">
+                <option value="openai-gpt4">GPT-4</option>
+                <option value="openai-gpt4-turbo">GPT-4 Turbo</option>
+                <option value="openai-gpt35-turbo">GPT-3.5 Turbo</option>
+                <option value="openai-custom">Custom OpenAI Model</option>
+              </optgroup>
+              <optgroup label="💎 Google Gemini">
+                <option value="gemini-pro">Gemini Pro</option>
+                <option value="gemini-pro-vision">Gemini Pro Vision</option>
+                <option value="gemini-custom">Custom Gemini Model</option>
+              </optgroup>
+              <optgroup label="🧠 Anthropic Claude">
+                <option value="claude-3-opus">Claude 3 Opus</option>
+                <option value="claude-3-sonnet">Claude 3 Sonnet</option>
+                <option value="claude-3-haiku">Claude 3 Haiku</option>
+                <option value="claude-custom">Custom Claude Model</option>
+              </optgroup>
+              <optgroup label="⚙️ Custom">
+                <option value="custom-api">Custom API Endpoint</option>
+                <option value="local-model">Local Model</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="header-title">
+            <h1>ODK Shell</h1>
+            <p>Interactive AI-powered command shell</p>
+          </div>
+        </div>
+      </header>
+      
+      <main class="shell-interface">
+        <div class="input-section">
+          <label for="prompt-input">Enter your prompt:</label>
+          <textarea 
+            id="prompt-input" 
+            placeholder="Ask the AI to perform a task on your local machine..."
+            rows="3"
+          ></textarea>
+          <button id="run-button" type="button">Run</button>
+        </div>
+        
+        <div class="output-section">
+          <label for="output-area">Output:</label>
+          <div id="output-area" class="output-display">
+            <p class="placeholder">Results will appear here...</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
